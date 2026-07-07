@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            /*(196th of an inch) */
+            width: 80vw;
+            margin: auto;
+            background-color: aquamarine;
+            height: 10vh;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1920px; */
+            /*(196th of an inch) */
+            width: 80vw;
+            margin: 23px auto;
+            background-color: aquamarine;
+            /* height: 80vh; */
+            min-height: 80vh;
+            /* font-size: 18px; */
+        }
+
+        .container div{
+            /* font-size: 2em; */
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid red;
+        }
+
+        .container div div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycont{
+            box-sizing: border-box;
+            margin: 23px auto;
+            border: 2px solid black;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            /* width: 100vh; */
+            /* width: 100vmax;  */
+            /* This implies width:100 vh for this device as height is min and width is max for this device */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reprehenderit tempore adipisci dolorum,
+            esse quibusdam rerum aperiam corporis laboriosam assumenda atque quis voluptatibus, accusantium ad fugit
+            officia minima minus natus, facere cupiditate. Quod, nam vitae? Molestiae optio accusamus corporis,
+            consectetur debitis autem, nihil laboriosam reiciendis similique molestias alias labore et repudiandae
+            laborum ut nostrum reprehenderit tempora?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero, voluptas dolores odio sed et excepturi reiciendis laboriosam enim quam recusandae maxime qui temporibus expedita illum eos quisquam, eius dignissimos ullam adipisci impedit maiores! Ratione consectetur nulla aut sed dolorum natus eos. Consequuntur pariatur voluptas, numquam perspiciatis est lorem500
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum nesciunt reprehenderit soluta odit. Hic animi a dolorem debitis explicabo iure aliquam laborum?
+            </div>
+        </div>
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+
+</html>

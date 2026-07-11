@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 4 - Multi Color Website</title>
+    <style>
+
+        :root{
+            --maincolor:beige;
+            --nav-bg-color:orangered;
+            --nav-boxes-bg-color:aqua;
+            --nav-boxes-color:magenta;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: var(--maincolor);
+        }
+
+        ul{
+            display: flex;
+            padding: 0 0 0 75vw;
+            background-color: var(--nav-bg-color);
+        }
+
+        ul li{
+            list-style: none;
+            margin: 10px 20px;
+            padding: 10px 20px;
+            background-color: var(--nav-boxes-bg-color);
+            color: var(--nav-boxes-color);
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Design a navbar.use global variables to create a multicolor navbar -->
+
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

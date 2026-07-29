@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.logo img {
+    width: 164px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right ul li {
+    list-style: none;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.heading{
+    text-align: center;
+    margin: 50px;
+    font-family: "Inter", sans-serif;
+}
+
+.heading span{
+    font-size: 40px;
+}
+
+.heading img{
+    padding: 0 25px;
+    width: 120px;
+}
+
+.heading p{
+    font-size: 20px;
+    max-width: 850px;
+    margin: 25px auto;
+    word-spacing: 2px;
+    line-height: 1.6;
+}
+
+.btn a button{
+    height: 60px;
+    width: 300px;
+    background-color: rgb(53, 185, 233);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    margin: auto;
+    color: white;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    padding: 15px 25px;
+}
+
+.btn a{
+    text-decoration: none;
+}
+
+.container{
+    display: grid;
+    width: 70vw;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1100px;
+    gap: 10px;
+}
+
+.container .box{
+    background-color: #F2F0EC;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    padding: 20px;
+}
+
+.container .box a{
+    text-decoration: none;
+}
+
+.container .box a button{
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.container .box a button.blue{
+    background-color: rgb(53, 185, 233);
+    padding: 0 15px;
+}
+
+.container .box a button.green{
+    background-color: rgb(22, 216, 61);
+    padding: 0 15px;
+}
+
+@media (max-width:600px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+}

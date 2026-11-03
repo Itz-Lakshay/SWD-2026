@@ -24,10 +24,10 @@ if(y<=0.33){
     sn = shopName.slice(0,6)
 }
 else if(y<=0.66){
-    sn = shopName.slice(7,11)
+    sn = shopName.slice(7,12)
 }
 else{
-    sn = shopName.slice(12)
+    sn = shopName.slice(13)
 }
 
 if(z<=0.33){

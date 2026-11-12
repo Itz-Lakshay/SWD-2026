@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video 77 - Excercise 13 Hacker's Terminal</title>
+    <style>
+        body {
+            background-color: rgb(0, 88, 0);
+            color: rgb(0, 255, 0);
+            font-family: monospace;
+            padding: 10px;
+            margin: 10px;
+            font-size: 25px;
+        }
+
+        @keyframes blink {
+            0%{
+                opacity: 1;
+            }
+
+            50%{
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 1;
+            }
+        }
+
+        .dot:nth-child(1){
+            animation: blink 1s infinite 0s;
+        }
+
+        .dot:nth-child(2){
+            animation: blink 1s infinite 0.3s;
+        }
+
+        .dot:nth-child(3){
+            animation: blink 1s infinite 0.6s;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    Create a hacking simulation which has green background and it shows these messages with random delay of 1 to 7 seconds
+    Initializing Hacking...
+    Reading Your Files...
+    Password Files Detected...
+    Sending all passwords and personal files to server...
+    Cleaning Up...
+
+    The three dots must blink so that it looks like a real terminal 
+    -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
